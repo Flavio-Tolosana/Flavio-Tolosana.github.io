@@ -1,0 +1,113 @@
+/* Archivo CSS para estilos */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+img {
+    width: 25em;
+}
+
+.main {
+    display: flex;
+}
+.container {
+    max-width: 115em;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin: 20px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block; /* Cambiado de 'inline' a 'inline-block' */
+    margin-right: 10px; /* Ajuste de margen */
+}
+
+nav a {
+    text-decoration: none;
+    color: #555; /* Color ligeramente más oscuro */
+    font-weight: bold;
+    padding: 8px 12px; /* Añadido relleno para hacer los enlaces más clicables */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #50a9e4; 
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para suavizar cambios */
+}
+
+nav a:hover {
+    background-color: #3498db; /* Cambiado de color al pasar el ratón */
+    color: #fff; /* Texto en blanco al pasar el ratón */
+}
+
+main {
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    flex: 1 1 auto;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.linkGitHub {
+    background-color: #93FF96;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top:0.5em;
+}
+
+.linkGitHub a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkGitHub img {
+    width: 24px; /* Puedes ajustar el tamaño según tus necesidades */
+    height: 24px;
+}
+
+.linkGitHub span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+}
