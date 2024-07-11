@@ -1,4 +1,4 @@
-/* Archivo CSS para estilos */
+
 
 body {
     font-family: 'Arial', sans-serif;
@@ -7,19 +7,124 @@ body {
     background-color: #f4f4f4;
 }
 
+html {
+    scroll-behavior: smooth;
+    color: #f4f4f4;
+}
+
+
+.nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    width: 40%;
+    transform: translateX(-50%);
+    background-color: #fff; 
+    z-index: 1000; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    border-radius: 15px; 
+    padding: 5px 0px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.nav nav ul li {
+    margin: 5px 15px; 
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav nav ul li a {
+    display: inline-block; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #555; 
+    font-weight: bold;
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    background-color: #50a9e4; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d0dae0; 
+    color: #fff; 
+}
+
+.no-nav{
+    padding-top: 100px;
+    color: #e0e4e7;
+}
+
+.bn30 {
+    border: 5em;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #0a0b0b, #ece4ec);
+    padding: 0.7em 2em;
+    border-radius: 65px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: white;
+}
+
+.bn30 .text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #0a0b0b, #ece4ec);
+}
+
+.bn30:after {
+    content: "";
+    border-radius: 18px;
+    position: absolute;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #0e0e10;
+}
+
+.bn30:hover {
+    background-image: linear-gradient(-45deg, #0a0b0b, #ece4ec);
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+.bn30:hover .text {
+    background-image: linear-gradient(-45deg, #0a0b0b, #ece4ec);
+}
+
+.img-fla {
+    border-radius: 50%;
+    width: 15%;
+}
+
 img {
     width: 25em;
 }
 
-.main {
-    display: flex;
-}
 .container {
-    max-width: 115em;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
 }
 
 header {
@@ -30,42 +135,12 @@ header {
     margin-bottom: 20px;
 }
 
-nav {
-    margin: 20px 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav li {
-    display: inline-block; /* Cambiado de 'inline' a 'inline-block' */
-    margin-right: 10px; /* Ajuste de margen */
-}
-
-nav a {
-    text-decoration: none;
-    color: #555; /* Color ligeramente más oscuro */
-    font-weight: bold;
-    padding: 8px 12px; /* Añadido relleno para hacer los enlaces más clicables */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #50a9e4; 
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones para suavizar cambios */
-}
-
-nav a:hover {
-    background-color: #3498db; /* Cambiado de color al pasar el ratón */
-    color: #fff; /* Texto en blanco al pasar el ratón */
-}
-
 main {
     text-align: center;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    color: #e0e4e7;
 }
 
 section {
@@ -95,7 +170,7 @@ section {
 }
 
 .linkGitHub img {
-    width: 24px; /* Puedes ajustar el tamaño según tus necesidades */
+    width: 24px; 
     height: 24px;
 }
 
@@ -110,4 +185,18 @@ footer {
     padding: 10px;
     background-color: #3498db;
     color: #fff;
+}
+
+@media (max-width: 978px) {   /*480*/
+    .nav {
+        width: 80%; 
+    }
+
+    .no-nav{
+        padding-top: 175px;
+    }
+
+    .img-fla {
+        width: 25%;
+    }
 }
