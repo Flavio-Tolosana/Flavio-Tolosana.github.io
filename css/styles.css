@@ -22,7 +22,6 @@ html {
     position: fixed;
     top: 20px;
     left: 50%;
-    width: 40%;
     transform: translateX(-50%);
     background-color: #fff; 
     z-index: 1000; 
@@ -42,7 +41,7 @@ html {
 }
 
 .nav nav ul li {
-    margin: 5px 15px; 
+    margin: 5px 5px; 
 }
 
 .nav li {
@@ -58,8 +57,8 @@ nav a {
     color: #555; 
     font-weight: bold;
     padding: 8px 12px; 
-    border-radius: 5px; 
-    background-color: #50a9e4; 
+    border-radius: 50px; 
+    background-color: #fff; 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -162,81 +161,91 @@ a {
     align-items: center;
 }
 
-img {
-    width: 20%
-}
-
 section {
     background-color: #ecf0f1;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     flex: 1 1 auto;
-    width: 40%;
+    width: 60%;
 }
 
-.linkGitHub {
-    background-color: #93FF96;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top:0.5em;
+.project {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
-.linkGitHub a {
-    text-decoration: none;
-    color: #000;
+.project img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.linkGitHub img {
-    width: 24px; 
-    height: 24px;
-}
-
-.linkGitHub span {
-    margin-left: 10px;
-    font-weight: bold;
-}
-
-
-.contact-container {
-    height: 100vh;
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    flex-direction: row;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+#contact p {
+    color: #000;
+    font-size: 15px;
+
+}
+.contact-container {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-left {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 20px;
-}
-
-.contact-left-title h2 {
-    font-weight: 600;
-    color: #93FF96;
-    font-size: 40px;
-    margin-bottom: 5px;
-}
-
-.contact-left-title hr {
-    border: none;
-    width: 120px;
-    height: 5px;
-    background-color: #50a9e4;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
 }
 
 .contact-inputs {
-    width: 400px;
+    width: 100%;
     height: 50px;
-    border: none;
-    outline: none;
+    border: 1px solid #000;
+    outline: 1px solid #000;
     padding-left: 25px;
     font-weight: 500;
     color: #555;
@@ -249,16 +258,10 @@ section {
     border-radius: 20px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
-}
 
 .contact-inputs:focus {
-    border: 2px solid #000
+    border: 2px solid #56b4c9;
+    outline: 2px solid #56b4c9;
 }
 
 .contact-inputs::placeholder {
@@ -266,6 +269,7 @@ footer {
 }
 
 .contact-left button {
+    width: 25%;
     display: flex;
     align-items: center;
     padding: 15px 30px;
@@ -282,8 +286,12 @@ footer {
     height: 15px;
 }
 
-.contact-right img {
-    width: 500px;
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
 }
 
 
@@ -295,17 +303,12 @@ footer {
     header, .container {
         width: 80%;
     }
+    .img-fla {
+        width: 35%;
+    }
 
     .no-nav{
         padding-top: 175px;
-    }
-
-    #projects, #skills, #experience, #education, #contact{
-        padding-top: 160px;
-    }
-
-    .img-fla {
-        width: 35%;
     }
 
     .bn30 {
@@ -313,10 +316,15 @@ footer {
         margin-top: 5px;
     }
 
-    .contact-inputs {
-        width: 80vw;
+    #projects, #skills, #experience, #education, #contact{
+        padding-top: 160px;
     }
-    .contact-right {
-        display: none;
+
+
+    .contact-left button {
+        width: 60%;
+    }
+    .contact-container {
+        width: 70%;
     }
 }
