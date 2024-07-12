@@ -5,13 +5,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    width: 100%;
 }
 
 html {
     scroll-behavior: smooth;
-    color: #f4f4f4;
 }
 
+.home {
+    background-color: #ffffff;
+}
+
+/********************** Menu navegacion ********************/
 
 .nav {
     position: fixed;
@@ -66,9 +71,50 @@ nav a:hover {
 .no-nav{
     padding-top: 100px;
     color: #e0e4e7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
+/************************** Header ***********************/
+
+header, .container {
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+header {
+    background-color: rgb(230, 183, 183);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+header:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img-fla {
+    border-radius: 50%;
+    width: 15%;
+}
+
+/********************** Botones Header *******************/
+a {
+    background-color: #ffffff;
+}
+.h-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .bn30 {
+    width: 10%;
     border: 5em;
     text-decoration: none;
     cursor: pointer;
@@ -83,13 +129,8 @@ nav a:hover {
     -webkit-transition: box-shadow 0.25s;
     transition: box-shadow 0.25s;
     color: white;
-}
-
-.bn30 .text {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(45deg, #0a0b0b, #ece4ec);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .bn30:after {
@@ -102,7 +143,6 @@ nav a:hover {
     bottom: 0;
     right: 0;
     z-index: -1;
-    background: #0e0e10;
 }
 
 .bn30:hover {
@@ -110,37 +150,20 @@ nav a:hover {
     box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
 }
 
-.bn30:hover .text {
-    background-image: linear-gradient(-45deg, #0a0b0b, #ece4ec);
-}
+/* Areas individuales */
 
-.img-fla {
-    border-radius: 50%;
-    width: 15%;
+#projects, #skills, #experience, #education, #contact{
+    padding-top: 100px;
+    color: #e0e4e7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
-    width: 25em;
-}
-
-.container {
-    display: flex;
-}
-
-header {
-    text-align: center;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-main {
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    color: #e0e4e7;
+    width: 20%
 }
 
 section {
@@ -149,8 +172,7 @@ section {
     margin-bottom: 20px;
     border-radius: 5px;
     flex: 1 1 auto;
-    min-width: 500px;
-    max-width: 500px;
+    width: 40%;
 }
 
 .linkGitHub {
@@ -179,6 +201,54 @@ section {
     font-weight: bold;
 }
 
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #93FF96;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #50a9e4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #555;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
@@ -187,16 +257,66 @@ footer {
     color: #fff;
 }
 
+.contact-inputs:focus {
+    border: 2px solid #000
+}
+
+.contact-inputs::placeholder {
+    color: #000;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-right img {
+    width: 500px;
+}
+
+
 @media (max-width: 978px) {   /*480*/
     .nav {
         width: 80%; 
+    }
+
+    header, .container {
+        width: 80%;
     }
 
     .no-nav{
         padding-top: 175px;
     }
 
+    #projects, #skills, #experience, #education, #contact{
+        padding-top: 160px;
+    }
+
     .img-fla {
-        width: 25%;
+        width: 35%;
+    }
+
+    .bn30 {
+        width: 35%;
+        margin-top: 5px;
+    }
+
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right {
+        display: none;
     }
 }
