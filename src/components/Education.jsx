@@ -6,7 +6,7 @@ const Education = () => {
             <h2>My Education</h2>
 
             <div className="education-card">
-                <img src="images/unizar.jpeg" alt="Zaragoza University" className="education-logo"/>
+                <img src="public/images/unizar.jpeg" alt="Zaragoza University" className="education-logo"/>
                 <div className="education-content">
                     <h3>Ingeniería Informática</h3>
                     <p>Universidad de Zaragoza</p>
