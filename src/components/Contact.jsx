@@ -11,7 +11,7 @@ const Contact = () => {
                     <input type="text" name="name" placeholder="Your name" className="contact-inputs" required/>
                     <input type="eimail" name="email" placeholder="Add your email" className="contact-inputs" required/>
                     <textarea name="message" placeholder="Your Message" className="contact-inputs" required></textarea>
-                    <button type="submit">Submit <img src="public/images/arrow_icon.png" alt=""/></button>
+                    <button type="submit">Submit <img src="/images/arrow_icon.png" alt=""/></button>
                 </form>
             </div>
         </div>
