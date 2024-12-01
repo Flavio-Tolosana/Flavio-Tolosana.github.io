@@ -2,6 +2,7 @@
   "name": "flavio-portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://flavio-tolosana.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
