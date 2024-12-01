@@ -432,9 +432,13 @@ section {
     outline: 1px solid #000;
     padding-left: 25px;
     font-weight: 500;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
     color: #555;
     border-radius: 50px;
+    background-color: #fff;
 }
+
 
 .contact-left textarea {
     height: 140px;
