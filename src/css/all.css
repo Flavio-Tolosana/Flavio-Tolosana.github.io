@@ -62,6 +62,11 @@ p {
     display: inline-block; 
 }
 
+.nav nav ul li a.active {
+    background-color: #d0dae0; 
+    color: #fff; 
+}
+
 nav a {
     text-decoration: none;
     color: #555; 
