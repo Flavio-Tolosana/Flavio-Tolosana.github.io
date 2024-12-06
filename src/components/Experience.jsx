@@ -1,8 +1,8 @@
-import "../css/all.css"
+import "../css/Experience.css"
 
 const Experience = () => {
     return (
-        <div id="experience">
+        <>
             <h2>My Experience</h2>
             <div className="timelineColor">
                 <div className="timeline">
@@ -20,7 +20,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

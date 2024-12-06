@@ -1,9 +1,9 @@
-import "../css/all.css"
+import "../css/Header.css"
 
 const Header = () => {
 
     return (
-        <div className="h-name">
+        <header>
             <h1>Flavio Tolosana Hernando</h1>
             <img className="img-fla" src="/images/flavio.jpg"/>
             <h2>Hello, Im Flavio Tolosana. 👋</h2>
@@ -24,7 +24,7 @@ const Header = () => {
                 </a>
                 <a className="bn30" href="/images/Flavio_Tolosana-CV.pdf" target="_blank">See CV</a>
             </div>      
-        </div>
+        </header>
     )
 
 }

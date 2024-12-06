@@ -1,0 +1,48 @@
+.education-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    @media (max-width: 978px) {
+        width: 95%; 
+    }
+}
+
+.education-logo {
+    height: auto;
+    margin-right: 10%; /* Espacio entre la imagen y el texto */
+    width: 180px; /* Ajusta el tamaño del logo */
+    @media (max-width: 978px) {
+        width: 80px; 
+    }
+}
+
+.education-content {
+    text-align: left;
+}
+
+.education-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.education-content p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.education-content ul {
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+}
+
+.education-content ul li {
+    margin-bottom: 5px;
+    color: #444;
+}

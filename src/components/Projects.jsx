@@ -1,9 +1,9 @@
-import "../css/all.css"
+import "../css/Projects.css"
 
 const Projects = () => {
 
     return (
-        <div id="projects">
+        <>
             <h2>My Projects</h2>
             <section>
                 <h2>FGP-Sishas</h2>
@@ -35,7 +35,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 
 }

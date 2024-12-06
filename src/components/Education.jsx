@@ -1,8 +1,8 @@
-import "../css/all.css"
+import "../css/Education.css"
 
 const Education = () => {
     return (
-        <div id="education">
+        <>
             <h2>My Education</h2>
 
             <div className="education-card">
@@ -16,7 +16,7 @@ const Education = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

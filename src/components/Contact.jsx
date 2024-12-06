@@ -1,8 +1,8 @@
-import "../css/all.css"
+import "../css/Contact.css"
 
 const Contact = () => {
     return (
-        <div id="contact">
+        <>
             <h2>Contact Me</h2>
             <p>Please contact me directly at flavio.tolosana@gmail.com or through this form.</p>
             <div className="contact-container">
@@ -14,7 +14,7 @@ const Contact = () => {
                     <button type="submit">Submit <img src="/images/arrow_icon.png" alt=""/></button>
                 </form>
             </div>
-        </div>
+        </>
     )
 }
 

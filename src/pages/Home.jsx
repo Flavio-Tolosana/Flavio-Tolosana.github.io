@@ -6,24 +6,21 @@ import NavBar from "../components/NavBar"
 import Projects from "../components/Projects"
 import Skills from "../components/Skills"
 
-import "../css/all.css"
+import "../css/Home.css"
 
 const Home = () => {
     return (            
     
         <div className="home" id="home">
-
-            <div className="nav">
-                <NavBar/>
-            </div>
+            <NavBar/>
             <div className="no-nav">
-                <header><Header/></header>
-                <main className="container">
-                    <Projects/>
-                    <Skills/>
-                    <Experience/>
-                    <Education/>
-                    <Contact/>
+                <Header/>
+                <main>
+                    <div id="projects"><Projects/></div>
+                    <div id="skills"><Skills/></div>
+                    <div id="experience"><Experience/></div>
+                    <div id="education"><Education/></div>
+                    <div id="contact"><Contact/></div>
                 </main>
                 <footer>
                     <p>&copy; 2024 Flavio Tolosana Hernando</p>
