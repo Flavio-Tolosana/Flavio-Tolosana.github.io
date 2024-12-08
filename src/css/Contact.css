@@ -10,9 +10,6 @@ p {
     justify-content: center;
     align-items: center;
     width: 60%;
-    @media (max-width: 978px) {
-        width: 70%;
-    }
 }
 
 .contact-left {
@@ -67,12 +64,19 @@ p {
     background: linear-gradient(270deg, #ff994f, #fa6d86);
     cursor: pointer;
     width: 25%;
-    @media (max-width: 978px) {
-        width: 60%;
-    }
 }
 
 .contact-left button img {
     height: 15px;
     margin-left: 7%;
+}
+
+@media (max-width: 978px) {
+    .contact-container {
+        width: 70%;
+    }
+
+    .contact-left button {
+        width: 60%;
+    }
 }

@@ -7,18 +7,12 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 75%;
-    @media (max-width: 978px) {
-        width: 95%; 
-    }
 }
 
 .education-logo {
     height: auto;
     margin-right: 10%; /* Espacio entre la imagen y el texto */
     width: 180px; /* Ajusta el tamaño del logo */
-    @media (max-width: 978px) {
-        width: 80px; 
-    }
 }
 
 .education-content {
@@ -45,4 +39,14 @@
 .education-content ul li {
     margin-bottom: 5px;
     color: #444;
+}
+
+@media (max-width: 978px) {
+    .education-card {
+        width: 95%; 
+    }
+
+    .education-logo {
+        width: 80px; 
+    }
 }

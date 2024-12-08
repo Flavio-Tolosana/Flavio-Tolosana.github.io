@@ -25,9 +25,6 @@
     margin-left: -3px;
     overflow: hidden;
     left: 50%;
-    @media (max-width: 978px) {
-        left: 20px;
-    }
 }
 
 /* Container around content */
@@ -36,11 +33,6 @@
     background-color: inherit;
     width: 45%;
     padding: 10px 40px;
-    @media (max-width: 978px) {
-        width: 75%;
-        padding-left: 30px;
-        padding-right: 25px;
-    }
 }
 
 /* The circles on the timeline */
@@ -61,18 +53,6 @@
 .left {
     left: 50%;
     transform: translateX(-100%);
-    @media (max-width: 978px) {
-        left: 20px;
-        transform: translateX(0%);
-    }
-}
-
-/* Place the container to the right */
-.right {
-    left: 50%;
-    @media (max-width: 978px) {
-        left: 20px;
-    }
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -86,11 +66,15 @@
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-    @media (max-width: 978px) {
-        left: 20px;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
+}
+
+.left::after {
+    right: -17px;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -106,18 +90,9 @@
     border-color: transparent white transparent transparent;
 }
 
-.left::after {
-    right: -17px;
-    @media (max-width: 978px) {
-        left: -15px;
-    }
-}
 /* Fix the circle for containers on the right side */
 .right::after {
     left: -16px;    
-    @media (max-width: 978px) {
-        left: -15px;
-    }
 }
 
 /* The actual content */
@@ -126,4 +101,39 @@
     background-color: white;
     position: relative;
     border-radius: 6px;
+}
+
+@media (max-width: 978px) {
+    .timeline::after {
+        left: 20px;
+    }
+
+    .containerTime {
+        width: 75%;
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+
+    .left {
+        left: 20px;
+        transform: translateX(0%);
+    }
+
+    .left::before {
+        left: 20px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after {
+        left: -15px;
+    }
+
+    .right {
+        left: 20px;
+    }
+
+    .right::after {
+        left: -15px;
+    }
 }
