@@ -39,6 +39,10 @@ footer {
 }
 
 @media (max-width: 978px) {
+
+    main {
+        width: 85%;
+    }
     .no-nav {
         padding-top: 175px;
     }

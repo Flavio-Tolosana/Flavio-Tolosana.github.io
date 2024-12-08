@@ -104,12 +104,17 @@
 }
 
 @media (max-width: 978px) {
+
+    .timelineColor {
+        width: 90%;
+    }
+
     .timeline::after {
         left: 20px;
     }
 
     .containerTime {
-        width: 75%;
+        width: 85%;
         padding-left: 30px;
         padding-right: 25px;
     }
@@ -135,5 +140,9 @@
 
     .right::after {
         left: -15px;
+    }
+
+    .right::before {
+        left: 20px;
     }
 }
