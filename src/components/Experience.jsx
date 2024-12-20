@@ -6,6 +6,16 @@ const Experience = () => {
             <h2>My Experience</h2>
             <div className="timelineColor">
                 <div className="timeline">
+                    <div className="containerTime left">
+                        <div className="content">
+                            <h3>English Communication through Transnational Online Projects course (EnComTOP)</h3>
+                            <p> Participación en curso de la Universidad de Oulu (Finlandia) en otoño de 2024.
+                                Desarrollé habilidades de trabajo en equipo participando de manera efectiva en inglés 
+                                en un proyecto transnacional con personas de diferentes países europeos.
+                            </p>
+                            <a href="/docs/Flavio_Tolosana-EnComTOP_2024.pdf" target="_blank">See certificate</a>
+                        </div>
+                    </div>
                     <div className="containerTime right">
                         <div className="content">
                             <h3>International Space Apps Challenge (NASA)</h3>
