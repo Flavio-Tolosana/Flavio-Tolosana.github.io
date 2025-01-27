@@ -11,12 +11,40 @@
         "title": "Habilidades"
     },
     "experience": {
-        "title": "Experiencia"
+        "title": "Experiencia",
+        "list": [
+            {
+                "title": "English Communication through Transnational Online Projects course (EnComTOP)",
+                "description": "Participación en curso de la Universidad de Oulu (Finlandia) en otoño de 2024. Desarrollé habilidades de trabajo en equipo participando de manera efectiva en inglés en un proyecto transnacional con personas de diferentes países europeos."
+            },
+            {
+                "title": "International Space Apps Challenge (NASA)",
+                "description": "Participación en International Space Apps Challenge (NASA) del año 2022"
+            },
+            {
+                "title": "Universidad Zaragoza EINA (2021-2025)",
+                "description": "Estudiante de la Universidad de Zaragoza en Ingeniería Informática"
+            }
+        ],
+        "certificate": "Ver certificado"
     },
     "education": {
-        "title": "Educación"
+        "title": "Educación",
+        "degree": "Ingeniería Informática",
+        "university": "Universidad de Zaragoza",
+        "year": "Estudiante de 4º Curso",
+        "especialidad": "Especialidad: ",
+        "computing": "Computación"
     },
     "contact": {
-        "title": "Contacto"
+        "title": "Contacto",
+        "text1": "Por favor, contácteme directamente a ",
+        "text2": " o a través de este formulario.",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje"
+        },
+        "submit": "Enviar"
     }
 }

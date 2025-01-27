@@ -11,11 +11,11 @@ const Education = () => {
             <div className="education-card">
                 <img src="/images/unizar.jpeg" alt="Zaragoza University" className="education-logo"/>
                 <div className="education-content">
-                    <h3>Ingeniería Informática</h3>
-                    <p>Universidad de Zaragoza</p>
-                    <p>Estudiante de 4º Curso</p>
+                    <h3>{t('education.degree')}</h3>
+                    <p>{t('education.university')}</p>
+                    <p>{t('education.year')}</p>
                     <ul>
-                        <li>Especialidad: <i>Computación</i></li>
+                        <li>{t('education.especialidad')}<i>{t('education.computing')}</i></li>
                     </ul>
                 </div>
             </div>
