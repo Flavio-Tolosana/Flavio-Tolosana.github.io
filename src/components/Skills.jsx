@@ -1,38 +1,39 @@
 import "../css/Skills.css"
+import Skill from "./Skill"
+import "../index.css"
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+    const { t } = useTranslation();
+
+    const habilidades = [
+        "Java",
+        // "C",
+        "C++",
+        "Python",
+        "JavaScript",
+        "React",
+        "HTML",
+        "CSS",
+        "SQL",
+        "MongoDB",
+        "SpringBoot",
+        "Express",
+        "GitHub",
+        // "Docker",
+        // "Azure",
+        "Latex"
+    ]
     return (
         <>
-            <h2>My Skills</h2>
-            <ul className="skills-list">
-                <li className="skill-item">
-                    <img src="/images/skills/html-1.svg" alt="HTML"/>
-                    <p>HTML</p>
-                </li>
-                <li className="skill-item">
-                    <img src="/images/skills/css-3.svg" alt="CSS"/>
-                    <p>CSS</p>
-                </li>
-                <li className="skill-item">
-                    <img src="/images/skills/nodejs-3.svg" alt="Node JS"/>
-                    <p>Node JS</p>
-                </li>
-                <li className="skill-item">
-                    <img src="/images/skills/java-4.svg" alt="Java"/>
-                    <p>Java</p>
-                </li>
-                <li className="skill-item">
-                    <img src="/images/skills/spring-3.svg" alt="SpringBoot"/>
-                    <p>SpringBoot</p>
-                </li>
-                <li className="skill-item">
-                    <img src="/images/skills/c-1.svg" alt="C"/>
-                    <p>C</p>
-                </li>
-                <li className="skill-item">
-                    <img src="/images/skills/c.svg" alt="C++"/>
-                    <p>C++</p>
-                </li>
+            <h2>{t('skills.title')}</h2>
+    
+            <ul className="skills ">
+                {habilidades.map((h, idx) => (
+                    <li key={idx} className="box-skill">
+                        <Skill name={h}/>
+                    </li>
+                ))}
             </ul>
         </>
     )

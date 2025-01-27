@@ -11,5 +11,8 @@ export default {
   },
   darkMode: "class",
   plugins: [nextui()],
+  corePlugins: {
+    preflight: false, // Esto desactiva el reset de estilos de Tailwind
+  },
 }
 

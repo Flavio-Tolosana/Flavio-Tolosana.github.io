@@ -1,9 +1,11 @@
 import "../css/Experience.css"
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+    const { t } = useTranslation();
     return (
         <>
-            <h2>My Experience</h2>
+            <h2>{t('experience.title')}</h2>
             <div className="timelineColor">
                 <div className="timeline">
                     <div className="containerTime left">

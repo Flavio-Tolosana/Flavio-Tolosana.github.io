@@ -1,3 +1,22 @@
 {
-    "welcome": "Hola, soy Flavio Tolosana. 👋"
+    "welcome": "Hola, soy Flavio Tolosana. 👋",
+    "home": {
+        "title": "Inicio",
+        "cv": "Ver CV"
+    },
+    "projects": {
+        "title": "Proyectos"
+    },
+    "skills": {
+        "title": "Habilidades"
+    },
+    "experience": {
+        "title": "Experiencia"
+    },
+    "education": {
+        "title": "Educación"
+    },
+    "contact": {
+        "title": "Contacto"
+    }
 }

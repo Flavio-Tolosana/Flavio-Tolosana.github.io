@@ -1,9 +1,12 @@
 import "../css/Education.css"
+import { useTranslation } from 'react-i18next';
+
 
 const Education = () => {
+    const { t } = useTranslation();
     return (
         <>
-            <h2>My Education</h2>
+            <h2>{t('education.title')}</h2>
 
             <div className="education-card">
                 <img src="/images/unizar.jpeg" alt="Zaragoza University" className="education-logo"/>

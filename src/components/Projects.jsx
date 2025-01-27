@@ -1,10 +1,11 @@
 import "../css/Projects.css"
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
-
+    const { t } = useTranslation();
     return (
         <>
-            <h2>My Projects</h2>
+            <h2>{t('projects.title')}</h2>
             <section>
                 <h2>FGP-Sishas</h2>
                 <div className="project">

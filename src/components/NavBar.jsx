@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 
 import "../css/NavBar.css"
+import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
 
     const [activeSection, setActiveSection] = useState("home");
+    const { t } = useTranslation();
 
     // useEffect(() => {
     //     const handleScroll = () => {
@@ -49,7 +51,7 @@ const NavBar = () => {
                     className={activeSection === "home" ? "active" : ""} 
                     onClick={() => handleClick("home")}
                 >
-                    Home
+                    {t('home.title')}
                 </a>
             </li>
             <li>
@@ -58,7 +60,7 @@ const NavBar = () => {
                     className={activeSection === "projects" ? "active" : ""} 
                     onClick={() => handleClick("projects")}
                 >
-                    Projects
+                    {t('projects.title')}
                 </a>
             </li>
             <li>
@@ -67,7 +69,7 @@ const NavBar = () => {
                     className={activeSection === "skills" ? "active" : ""} 
                     onClick={() => handleClick("skills")}
                 >
-                    Skills
+                    {t('skills.title')}
                 </a>
             </li>
             <li>
@@ -76,7 +78,7 @@ const NavBar = () => {
                     className={activeSection === "experience" ? "active" : ""} 
                     onClick={() => handleClick("experience")}
                 >
-                    Experience
+                    {t('experience.title')}
                 </a>
             </li>
             <li>
@@ -85,7 +87,7 @@ const NavBar = () => {
                     className={activeSection === "education" ? "active" : ""} 
                     onClick={() => handleClick("education")}
                 >
-                    Education
+                    {t('education.title')}
                 </a>
             </li>
             <li>
@@ -94,7 +96,7 @@ const NavBar = () => {
                     className={activeSection === "contact" ? "active" : ""} 
                     onClick={() => handleClick("contact")}
                 >
-                    Contact
+                    {t('contact.title')}
                 </a>
             </li>
         </ul>

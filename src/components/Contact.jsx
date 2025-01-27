@@ -1,9 +1,11 @@
 import "../css/Contact.css"
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation();
     return (
         <>
-            <h2>Contact Me</h2>
+            <h2>{t('contact.title')}</h2>
             <p>Please contact me directly at flavio.tolosana@gmail.com or through this form.</p>
             <div className="contact-container">
                 <form action="https://api.web3forms.com/submit" method="POST" className="contact-left">
