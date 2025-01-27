@@ -1,12 +1,13 @@
 import "../css/Header.css"
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
-
+    const { t } = useTranslation();
     return (
         <header>
             <h1>Flavio Tolosana Hernando</h1>
             <img className="img-fla" src="/images/flavio.jpg"/>
-            <h2>Hello, Im Flavio Tolosana. 👋</h2>
+            <h2>{t('welcome')}</h2>
             <div className="h-buttons">
                 <a className="bn30" href="https://github.com/Flavio-Tolosana" target="_blank">GitHub
                     {/* <svg stroke="currentColor" fill="currentColor" stroke-width="0" 
