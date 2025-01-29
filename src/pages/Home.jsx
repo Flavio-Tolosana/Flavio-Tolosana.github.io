@@ -25,7 +25,7 @@ const Home = () => {
                 </main>
                 <LanguageButton/>
                 <footer>
-                    <p>&copy; 2024 Flavio Tolosana Hernando</p>
+                    <p>&copy; 2025 Flavio Tolosana Hernando</p>
                 </footer>
             </div>
 
