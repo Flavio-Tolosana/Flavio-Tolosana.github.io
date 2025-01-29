@@ -1,4 +1,9 @@
-:root{
-    --max-width: 978px;
-    --color-green: rgb(92, 235, 9);
+:root {
+    --body_background: white;
+    --body_color: black;
+}
+
+[data-theme="dark"] {
+    --body_background: black;
+    --body_color: white;
 }

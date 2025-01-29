@@ -1,4 +1,5 @@
 import Contact from "../components/Contact"
+import DarkMode from "../components/DarkMode"
 import Education from "../components/Education"
 import Experience from "../components/Experience"
 import Header from "../components/Header"
@@ -24,6 +25,8 @@ const Home = () => {
                     <div id="contact"><Contact/></div>
                 </main>
                 <LanguageButton/>
+                <DarkMode />
+                <p>Prueba color texto</p>
                 <footer>
                     <p>&copy; 2025 Flavio Tolosana Hernando</p>
                 </footer>

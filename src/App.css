@@ -2,7 +2,6 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4fc;
   width: 100%;
 }
 
@@ -18,5 +17,6 @@ h3 {
   color: #211f1f;
 }
 p {
-  color: #2f2d2d;
+  /* color: #2f2d2d; */
+  color: var(--body_color)
 }
