@@ -19,3 +19,8 @@
     border-radius: 2px;
     display: inline-block;
 }
+
+.modeLight {
+    width: 30px;
+    height: auto;
+}

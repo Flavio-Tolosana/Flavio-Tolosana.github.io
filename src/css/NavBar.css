@@ -3,9 +3,9 @@ nav {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff; 
+    background-color: var(--secundary); 
     z-index: 1000; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
+    box-shadow: var(--shadow); 
     border-radius: 15px; 
     padding: 5px 0px;
 }
@@ -31,19 +31,19 @@ a {
     font-weight: bold;
     padding: 8px 12px; 
     border-radius: 50px; 
-    background-color: #fff; 
+    background-color: var(--secundary); 
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block; 
 }
 
 a.active {
-    background-color: #a0a8ad;
-    color: #fff; 
+    background-color: var(--fourth);
+    color: var(--color_opposite); 
 }
 
 a:hover {
-    background-color: #d0dae0; 
-    color: #fff; 
+    background-color: var(--terciary); 
+    color: var(--color_opposite); 
 }
 
 @media (max-width: 978px) {
