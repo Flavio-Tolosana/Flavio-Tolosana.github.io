@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -9,14 +11,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
-h1, h2 {
-  color: #000;
-}
-h3 {
-  color: #211f1f;
-}
-p {
-  /* color: #2f2d2d; */
-  color: var(--body_color)
+h1, h2, h3 {
+  color: var(--color);
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
 }

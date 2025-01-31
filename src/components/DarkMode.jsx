@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import {Switch} from "@heroui/switch";
 
 import '../css/DarkMode.css'
 
@@ -24,9 +25,16 @@ const DarkMode = () => {
     };
 
     return (
-        <button className={"darkModeButton"} onClick={toggleTheme}>
-            {theme === lightMode ? <MdOutlineLightMode className="modeLight"/> : <MdOutlineDarkMode className="modeLight"/> }
-        </button>
+        <div className="switch-fixed">
+            <Switch 
+                onChange={toggleTheme}
+                isSelected={theme === darkMode}
+                endContent={<MdOutlineLightMode />}
+                startContent={<MdOutlineDarkMode />}
+                size="lg"
+                color="secondary"
+            />
+        </div>
     );
 }
 

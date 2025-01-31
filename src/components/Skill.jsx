@@ -10,8 +10,8 @@ const Skill = ({name}) => {
     const skills = [
         { logo: <FaJava className="logo" style={{color: '#f25151'}}/>, alt: "Java" },
         { logo: <SiCplusplus className="logo" style={{color: '#1360ad'}}/>, alt: "C++" },
-        { logo: <FaPython className="logo" style={{color: '#e0d657'}}/>, alt: "Python"},
-        { logo: <IoLogoJavascript className="logo" style={{color: '#f5ff25'}}/>, alt: "JavaScript" },
+        { logo: <FaPython className="logo" style={{color: '#F5CD47'}}/>, alt: "Python"},
+        { logo: <IoLogoJavascript className="logo" style={{color: '#e0d657'}}/>, alt: "JavaScript" },
         { logo: <FaReact className="logo" style={{color: '#04f6fa'}}/>, alt: "React" },
         { logo: <FaHtml5 className="logo" style={{color: '#efa61d'}}/>, alt: "HTML" },
         { logo: <FaCss3Alt className="logo" style={{color: '#54afff'}}/>, alt: "CSS" },

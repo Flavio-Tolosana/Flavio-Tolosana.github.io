@@ -7,17 +7,37 @@
     --fourth: #44546F;
 
     --red: #F87168;
+    --red_second: #E2483D;
     --green: #94C748;
+    --green_second: #6A9A23;
     --orange: #FEA362;
+    --orange_second: #E56910;
     --yellow: #E2B203;
+    --yellow_second: #B38600;
     --cian: #4BCE97;
+    --cian_second: #22A06B;
     --azul_claro: #6CC3E0;
+    --azul_claro_second: #2898BD;
     --azul: #579DFF;
+    --azul_second: #1D7AFC;
     --morado: #9F8FEF;
+    --morado_second: #8270DB;
     --rosa: #E774BB;
+    --rosa_second: #CD519D;
 
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    --shadow_red: 0 10px 20px rgba(174,46,36, 0.4);
+    --shadow_green: 0 10px 20px rgba(76,107,31, 0.4);
+    --shadow_orange: 0 10px 20px rgba(165,72,0, 0.8);
+    --shadow_yellow: 0 10px 20px rgba(127,95,1, 0.4);
+    --shadow_cian: 0 10px 20px rgba(33,110,78, 0.4); 
+    --shadow_azul_claro: 0 10px 20px rgba(32,106,131, 0.4);
+    --shadow_azul: 0 10px 20px rgba(0,85,204, 0.4); 
+    --shadow_morado: 0 10px 20px rgba(94,77,178, 0.4); 
+    --shadow_rosa: 0 10px 20px rgba(148,61,115, 0.4);
 
+    --filter_arrow: 0;
+    --filter_arrow_opposite: 1;
 }
 
 [data-theme="dark"] {
@@ -30,15 +50,26 @@
 
 
     --red: #AE2E24;
-    --green: #94C748;
-    --orange: #FEA362;
-    --yellow: #E2B203;
-    --cian: #4BCE97;
-    --azul_claro: #6CC3E0;
-    --azul: #579DFF;
-    --morado: #9F8FEF;
-    --rosa: #E774BB;
+    --green: #4C6B1F;
+    --orange: #A54800;
+    --yellow: #7F5F01;
+    --cian: #216E4E;
+    --azul_claro: #206A83;
+    --azul: #0055CC;
+    --morado: #5E4DB2;
+    --rosa: #943D73;
 
     --shadow: 0 5px 15px rgba(253, 252, 252, 0.4);
+    --shadow_red: 0 5px 15px rgba(248,113,104, 0.4);  
+    --shadow_green: 0 5px 15px rgba(148,199,72, 0.4);
+    --shadow_orange: 0 5px 15px rgba(254,163,98, 0.8);
+    --shadow_yellow: 0 5px 15px rgba(226,178,3, 0.4);
+    --shadow_cian: 0 5px 15px rgba(75,206,151, 0.4);
+    --shadow_azul_claro: 0 5px 15px rgba(108,195,224, 0.4); 
+    --shadow_azul: 0 5px 15px rgba(87,157,255, 0.4);
+    --shadow_morado: 0 5px 15px rgba(159,143,239, 0.4);  
+    --shadow_rosa: 0 5px 15px rgba(231,116,187, 0.4); 
 
+    --filter_arrow: 1;
+    --filter_arrow_opposite: 0;
 }

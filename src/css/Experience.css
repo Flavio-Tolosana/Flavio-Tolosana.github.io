@@ -1,16 +1,15 @@
 .timelineColor {
-    background-color: #b4b4b4;
+    background-color: var(--terciary);
     width: 75%;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: transform .2s ease-in;
 }
 
 .timelineColor:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow);
     transform: scale(1.02);
 }
 
@@ -26,7 +25,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: var(--secundary);
     top: 0;
     bottom: 0;
     margin-left: -3px;
@@ -49,8 +48,8 @@
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
-    border: 4px solid white;
+    background-color: var(--secundary);
+    border: 4px solid var(--secundary);
     top: 15px;
     border-radius: 50%;
     overflow: visible;
@@ -70,9 +69,9 @@
     top: 22px;
     width: 0;
     right: 30px;
-    border: medium solid white;
+    border: medium solid var(--secundary);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent var(--secundary);
 }
 
 .left::after {
@@ -92,9 +91,9 @@
     top: 22px;
     width: 0;
     left: 30px;
-    border: medium solid white;
+    border: medium solid var(--secundary);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--secundary) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -105,7 +104,7 @@
 /* The actual content */
 .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: var(--secundary);
     position: relative;
     border-radius: 6px;
 }
@@ -115,7 +114,6 @@
 }
 
 .content a {
-    background-color: #ffffff;
     border: 5em;
     text-decoration: none;
     cursor: pointer;
@@ -123,13 +121,10 @@
     font-size: 16px;
     -webkit-transform: translate(0);
     transform: translate(0);
-    background-image: linear-gradient(45deg, #0140ee, #6a7ce6);
+    background-color: var(--azul);
+    color: var(--color);
     padding: 0.7em 2em;
     border-radius: 65px;
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-    -webkit-transition: box-shadow 0.25s;
-    transition: box-shadow 0.25s;
-    color: white;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -147,8 +142,8 @@
 }
 
 .content a:hover {
-    background-image: linear-gradient(45deg, #6a7ce6, #0140ee);
-    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+    background-color: var(--azul_second);
+    box-shadow: var(--shadow_azul)
 }
 
 @media (max-width: 978px) {
@@ -175,7 +170,7 @@
     .left::before {
         left: 20px;
         border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
+        border-color: transparent var(--secundary) transparent transparent;
     }
 
     .left::after {

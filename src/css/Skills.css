@@ -24,8 +24,8 @@
     margin-bottom: 2vh;
     padding: 5px;
     transition: transform 0.2s linear;
-    background-color: var(--color-skills);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--secondary);
+    box-shadow: var(--shadow);
 }
 
 .skill:hover {

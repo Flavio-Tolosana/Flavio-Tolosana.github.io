@@ -8,6 +8,11 @@ nav {
     box-shadow: var(--shadow); 
     border-radius: 15px; 
     padding: 5px 0px;
+    transition: transform 0.2s;
+}
+
+nav:hover {
+    transform: translateX(-50%) scale(1.05);
 }
 
 ul {
@@ -27,7 +32,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #555; 
+    color: var(--color);
     font-weight: bold;
     padding: 8px 12px; 
     border-radius: 50px; 

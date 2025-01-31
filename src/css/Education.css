@@ -2,17 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #afaeae;
+    background-color: var(--azul_claro);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 75%;
     transition: transform .2s ease-in;
 }
 
 .education-card:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
+    box-shadow: var(--shadow_azul_claro)
 }
 
 .education-logo {
@@ -29,13 +28,11 @@
 .education-content h3 {
     margin: 0 0 10px 0;
     font-size: 20px;
-    color: #333;
 }
 
 .education-content p {
     margin: 5px 0;
     font-size: 16px;
-    color: #666;
 }
 
 .education-content ul {
@@ -45,7 +42,6 @@
 
 .education-content ul li {
     margin-bottom: 5px;
-    color: #444;
 }
 
 @media (max-width: 978px) {

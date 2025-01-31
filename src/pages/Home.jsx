@@ -26,7 +26,6 @@ const Home = () => {
                 </main>
                 <LanguageButton/>
                 <DarkMode />
-                <p>Prueba color texto</p>
                 <footer>
                     <p>&copy; 2025 Flavio Tolosana Hernando</p>
                 </footer>

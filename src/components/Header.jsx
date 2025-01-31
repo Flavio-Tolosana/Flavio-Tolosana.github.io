@@ -8,7 +8,7 @@ const Header = () => {
         <header>
             <h1>Flavio Tolosana Hernando</h1>
             <img className="img-fla" src="/images/flavio.jpg"/>
-            <h2>{t('welcome')}</h2>
+            <p className="w-[50%]">{t('home.text')}</p>
             <div className="h-buttons">
                 <a className="bn30 logo-button" href="https://github.com/Flavio-Tolosana" target="_blank">
                     <FaGithub className="logo-button-img"/>
