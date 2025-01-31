@@ -5,11 +5,11 @@ import {Switch} from "@heroui/switch";
 import '../css/DarkMode.css'
 
 const DarkMode = () => {
-    // Obtener el tema guardado o usar "light" por defecto
-    const [theme, setTheme] = useState(() => localStorage.getItem("theme") || lightMode);
-
     const lightMode = 'light';
     const darkMode = 'dark';
+
+    // Obtener el tema guardado o usar "light" por defecto
+    const [theme, setTheme] = useState(() => localStorage.getItem("theme") || lightMode);
 
     useEffect(() => {
         // Aplicar el tema al <html> para afectar toda la página
