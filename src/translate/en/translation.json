@@ -6,7 +6,12 @@
         "cv": "View CV"
     },
     "projects": {
-        "title": "Projects"
+        "title": "Projects",
+        "textProjects": {
+            "sishas": "Web application for managing shishas and customers.",
+            "backBJ": "Backend for a BlackJack game with a REST API.",
+            "frontBJ": "Web frontend for the BlackJack game."
+        }
     },
     "skills": {
         "title": "Skills"

@@ -5,6 +5,7 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 import { VscAzure } from "react-icons/vsc";
 import { FaPython, FaReact, FaJava, FaHtml5, FaCss3Alt, FaGithub, FaDocker} from "react-icons/fa";
 import { Tooltip } from "@nextui-org/react";
+import PropTypes from "prop-types";
 
 const Skill = ({name}) => {
     const skills = [
@@ -35,5 +36,9 @@ const Skill = ({name}) => {
         </Tooltip>
     )
 }
+
+Skill.propTypes = {
+    name: PropTypes.string.isRequired,
+};
 
 export default Skill

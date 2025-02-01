@@ -6,7 +6,12 @@
         "cv": "Ver CV"
     },
     "projects": {
-        "title": "Proyectos"
+        "title": "Proyectos",
+        "textProjects": {
+            "sishas": "Aplicación web para gestión de shishas y clientes.",
+            "backBJ": "Backend para un juego de BlackJack con API REST.",
+            "frontBJ": "Frontend web para el juego de BlackJack."
+        }
     },
     "skills": {
         "title": "Habilidades"

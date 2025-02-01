@@ -38,6 +38,8 @@
 
     --filter_arrow: 0;
     --filter_arrow_opposite: 1;
+
+    --overlay: rgba(220,223,228, 0.5);
 }
 
 [data-theme="dark"] {
@@ -72,4 +74,7 @@
 
     --filter_arrow: 1;
     --filter_arrow_opposite: 0;
+
+    --overlay: rgba(44,51,58, 0.5);
+
 }
