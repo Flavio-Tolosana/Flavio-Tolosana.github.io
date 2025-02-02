@@ -50,6 +50,7 @@
   .modal-title {
     font-size: 1.5rem; /* text-2xl */
     font-weight: bold;
+    margin-bottom: 50px;
   }
   
   .modal-text {
@@ -82,24 +83,15 @@
     border-radius: 65px;
     margin-left: 5px;
     margin-right: 5px;
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .github {
-    background-color: var(--orange);
-  }
-
-  .github:hover {
-    background-color: var(--orange_second);
-    box-shadow: var(--shadow_orange)
-  }
-
-  .deploy {
-    background-color: var(--green);
-  }
-
-  .deploy:hover {
-    background-color: var(--green_second);
-    box-shadow: var(--shadow_green)
+  .modal-button:hover {
+    background-color: var(--azul_second);
+    box-shadow: var(--shadow_azul)
   }
 
   @media (max-width: 978px) {

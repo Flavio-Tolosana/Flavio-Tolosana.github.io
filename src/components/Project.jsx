@@ -43,11 +43,11 @@ const Project = ({ photo, title, skills, text, urlGithub, urlDeploy }) => {
 
               {/* Botones de acción */}
               <div className="modal-buttons">
-                <a href={urlGithub} className="modal-button github" target="_blank">
+                <a href={urlGithub} className="modal-button" target="_blank">
                   <FaGithub className="w-7 h-auto"/>
                 </a>
                 {urlDeploy && (
-                  <a href={urlDeploy} className="modal-button deploy" target="_blank">
+                  <a href={urlDeploy} className="modal-button" target="_blank">
                     <FaLink className="w-7 h-auto"/>
                   </a>
                 )}
